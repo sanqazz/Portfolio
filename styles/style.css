@@ -1,0 +1,136 @@
+body{
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-template-areas:
+      "navbar"
+      "welcome-section"
+      "projects"
+      "footer";
+  background-color: WHITE;
+}
+
+#navbar{
+  background: linear-gradient(0deg, #72bcd4, #12a8d8);
+  grid-area: navbar;
+  position: fixed;
+  background-color: #3E97D1;
+  left:0;
+  top:0;
+  width: 100vw;
+  height: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  z-index: 2;
+  }
+#navbar>a{
+  color: black;
+  margin-right: 35px;
+  text-decoration: none;
+ }
+#navbar>a:hover{
+ animation: shadow  0.5s 1 linear;
+ }
+@keyframes shadow {
+from {text-shadow: 0 -50px 30px}
+to{text-shadow: 0 0 0} 
+}
+
+#welcome-section{
+ display: flex;
+ align-items: center; 
+ justify-content: center; 
+ height: 100vh;
+ grid-area: welcome-section; 
+  background: linear-gradient(180deg, #aaaaaa, #ffffff); 
+ font-family: 'Bree Serif', serif;
+ font-size: 2.2em;
+  line-height: 1px;
+ 
+}
+#welcome-section>div>h1,#welcome-section>div>p {
+  animation: fade 2s 1 ease-in;
+}
+@keyframes fade{
+  from{opacity: 0}
+  to{opacity: 100}
+}
+
+#projects{
+  grid-area: projects;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto-fill repeat(auto-fill,350px);
+  grid-gap: 2vw;
+  justify-content: center;
+  margin-bottom: 30px;
+  }
+#projects>h2{
+   grid-area: 1/1/2/4; 
+  }
+.project-tile{
+
+}
+.project-img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: 0 0;
+  
+}
+
+.project-tile{
+  background-color: #aaaaaa;
+  }
+.project-tile:hover .img-caption>span{
+  animation: fade 0.5s linear;
+  animation-fill-mode: forwards;
+  }
+.project-tile>p{
+  font-size: 1.2em;
+  }  
+.project-tile>p>span{
+  color: #FFC308;
+  font-size: 1.2em;
+  opacity: 0;
+ }
+
+#footer{
+  grid-area: footer;
+  background: linear-gradient(180deg, #FCF114, #FFC308);
+  color: white;
+  font-size: 1.2em;
+  text-align: right;
+  padding-right: 50px;
+  line-height: 1px;
+  
+}
+#footer>div>a{
+  text-decoration: none;
+  color: white;
+}
+#footer>div>a:hover{
+  animation: white_shadow 0.5s 1 linear;
+}
+@keyframes white_shadow {
+from {text-shadow: 0 50px 30px}
+to{text-shadow: 0 0 0} 
+}
+
+@media (max-width: 1200px){
+ #projects{
+   grid-template-columns: 1fr;} 
+  #navbar{
+    font-size: 7vh; 
+    height: 10vh;}
+  #navbar>a{
+   margin-right: 15px;
+   }
+   
+  }
