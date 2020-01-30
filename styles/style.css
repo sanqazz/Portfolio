@@ -56,6 +56,7 @@ to{text-shadow: 0 0 0}
 }
 #welcome-section>div>h1,#welcome-section>div>p {
   animation: fade 2s 1 ease-in;
+  font-size: 3vw;
 }
 @keyframes fade{
   from{opacity: 0}
