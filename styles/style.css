@@ -78,7 +78,7 @@ to{text-shadow: 0 0 0}
 
 }
 .project-img{
-  width: 100%;
+  width: 30vw;
   height: 350px;
   object-fit: cover;
   object-position: 0 0;
@@ -125,12 +125,27 @@ to{text-shadow: 0 0 0}
 
 @media (max-width: 1200px){
  #projects{
-   grid-template-columns: 1fr;} 
+   grid-template-columns: 1fr;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-template-rows: auto-fill repeat(auto-fill,350px);
+  } 
+  .project-img{
+    width: 90vw;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0 0;
+   }
+  #projects>h2{
+    grid-area: 1/1/2/2; 
+   }
   #navbar{
-    font-size: 7vh; 
-    height: 10vh;}
+    font-size: 3vw; 
+    height: 10vh;
+    justify-content: center;
+  }
   #navbar>a{
-   margin-right: 15px;
+   margin-right: 2vw;
    }
    
   }
