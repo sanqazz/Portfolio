@@ -1,5 +1,5 @@
 body{
-  font-family: 'Bree Serif', serif;
+  font-family: 'Kurale', serif;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
@@ -9,7 +9,8 @@ body{
       "welcome-section"
       "projects"
       "footer";
-  background-color: WHITE;
+  background-color: white;
+  
 }
 
 #navbar{
@@ -25,7 +26,6 @@ body{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'Pacifico', cursive;
   font-size: 1.5em;
   z-index: 2;
   }
@@ -48,15 +48,30 @@ to{text-shadow: 0 0 0}
  justify-content: center; 
  height: 100vh;
  grid-area: welcome-section; 
-  background: linear-gradient(180deg, #aaaaaa, #ffffff); 
- font-family: 'Bree Serif', serif;
- font-size: 2.2em;
+  /*background: linear-gradient(180deg, #aaaaaa, #ffffff); */
+  font-size: 2.2em;
   line-height: 1px;
- 
 }
-#welcome-section>div>h1,#welcome-section>div>p {
-  animation: fade 2s 1 ease-in;
-  font-size: 3vw;
+#welcome-section::after{
+  content: "";
+  background: url(../images/pt.jpg);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-size: 50vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+#welcome-section>div {
+ animation: fade 2s 1 ease-in;
+  font-size: 2.5vw;
+  
 }
 @keyframes fade{
   from{opacity: 0}
@@ -75,9 +90,6 @@ to{text-shadow: 0 0 0}
 #projects>h2{
    grid-area: 1/1/2/4; 
   }
-.project-tile{
-
-}
 .project-img{
   width: 30vw;
   height: 350px;
