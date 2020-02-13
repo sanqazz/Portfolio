@@ -1,55 +1,349 @@
 <html>
-<head>
+  <head>
+    <title>My personal site</title>
+    <meta charset="UTF-8" />
+    <!-- Bootstrap 4.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <!-- jQuery-3.4.1 -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+ 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 
-<link href="styles/style.css" rel="stylesheet"></script>
-<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Kurale&display=swap" rel="stylesheet">
-</head>
-<body>
-<nav id="navbar">
-  <a href="#welcome-section">Обо мне</a>
-  <a href="#footer">Контакты</a>
-  <a href="#projects">Мои проекты</a>
-  <a id="profile-link" target="_blank" href="https://github.com/sanqazz">Мой профиль</a>
-  
-  </nav>  
+    <!-- JS -->
+    <script type="text/javascript" src='js/main.js'></script>
+    <!-- SVG -->
+    <script src="js/snap.svg-min.js"></script>
+  </head>
 
-<section id="welcome-section">
-  <div>
-    <div class = "text_ws">
-  <h1>Привет, я начинающий JavaScript разработчик!</h1>
-  <p>Это моё... кхе-кхе... портфолио. Но оно постепенно наполняется!</p>
+  <body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#">Home</a>
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-4">
+        <li class="nav-item">
+            <a class="nav-link" data-value="about" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-value="blog" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-value="team" href="#">
+            Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " data-value="contact" href="#">Contact</a>
+          </li>
+    </ul>
+    </div>
+</nav>
+<!-- Header -->
+<header class="header">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="description ">
+            <h1>Hello! It's my personal site!
+            <p>I made this site to introduce myself a bit!</p>   
+            <button class="btn btn-outline-secondary btn-lg">See more</button> 
+            </h1> 
+        </div>
+    </div>
+</header>
+<!-- About -->
+<div class="about" id="about">
+    <h1 class="text-center">About</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+            <img src="images/me.jpg" class="img-fluid">
+            <span class="text-justify">It's me</span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 desc">
+            
+            <h3>Oleksandr Zameta</h3>
+            <p>
+                I am a beginner JavaScript developer. I learn some modern frameworks to make sites and applications.
+            Here i will post my works.
+            </p>
+            </div>
+        </div>
+    </div>
+</div>   
+<!-- Portfolio -->
+<div class="portfolio"  id="portfolio">
+    <h1 class="text-center">Portfolio</h1>
+<div class="container">
+ <div class="row">
+
+  <!-- <div class="dws">
+    <div class="blocImg"><img src="images/portfolio/port1.png" alt="CSS эффект">
+       <div class="blocText">
+          <div class="text">
+             <h2>CSS эффект <span>при наведении</span></h2>
+             <p>transition<br> transform scale(x,y)<br>:hover ::before ::after</p>
+          </div>
+       </div>
+    </div>
+ </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+  <div class="col-lg-4 col-md-4 col-sm-12 dws">
+    <div class= "blocImg">
+      <a href="https://codepen.io/sunny-bunny/pen/MNPqpR" target="_blank">
+        <img src="images/portfolio/port1.png" class="img-fluid img">
+        <div class="blocText">
+          <div class="text">
+            <h2>Trambone-shop</h2>
+            <p>Study site from www.freecodecamp.org</p>
+          </div>
+        </div>
+      </a> 
+    </div>
   </div>
-    <div id="ribbon"></div>  
-  </div>  
-  </section>  
 
-<section id="projects">
- <h2>Мои работы...</h2>
-<div class="project-tile"> 
-<a href="https://codepen.io/sunny-bunny/pen/MNPqpR" target="_blank" title="Тест-задание для сертификата сайта https://www.freecodecamp.org/"><img class="project-img" 
- alt="Link trambones site" src="https://i.ibb.co/xX26G81/trambones-srceen.png"/></a>
-   <p class="img-caption"><span>◉</span>Трамбоны<span>◉</span></p>
-</div>   
-<div class="project-tile"> 
-<a href="https://codepen.io/sunny-bunny/pen/qeYqpE" target="_blank" title="Тест-задание для сертификата сайта https://www.freecodecamp.org/"><img class="project-img" 
- alt="Link tribute-page site" src="https://i.ibb.co/dPZBVqz/tribute-page.png"/></a>
-<p class="img-caption"><span>ò</span>Памятная страница<span>ó</span></p>
-</div>
-<div class="project-tile"> 
-<a href="https://codepen.io/sunny-bunny/pen/oNgVOGr?editors=0010" target="_blank" title="Tutorial сайта https://ru.reactjs.org/tutorial/tutorial.html"><img class="project-img" 
- alt="Link react XOgame site" src="images/reactXO.PNG"/></a>
-   <p class="img-caption"><span>✿</span>Крестики-нолики на ReactJS<span>✿</span></p>
-</div>   
 
- </section>  
 
-<section id="footer">
-  <div>
-    <p>Контакты:</p>
-    <a href="mailto:zametaoo@gmail.com?subject=Portfolio"><p>e-mail: zametaoo@gmail.com</p></a>
+  <div class="col-lg-4 col-md-4 col-sm-12 dws">
+   <div class= "blocImg">
+    <a href="https://codepen.io/sunny-bunny/pen/qeYqpE" target="_blank">
+      <img src="images/portfolio/port2.png" class="img-fluid img">
+      <div class="blocText">
+        <div class="text">
+          <h2>Tribute-page</h2>
+          <p>Study site from www.freecodecamp.org</p>
+        </div>
+      </div>
+     </a> 
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-4 col-sm-12 dws">
+    <div class= "blocImg">
+      <a href="https://codepen.io/sunny-bunny/pen/oNgVOGr?editors=0010" target="_blank">
+       <img src="images/portfolio/port3.png" class="img-fluid img">
+       <div class="blocText">
+         <div class="text">
+           <h2>ReactJS X-O game</span></h2>
+           <p>Tutorial + additional tasks from reactjs.org</p>
+         </div>
+       </div>
+      </a>
+     </div>
+   </div>
+ 
+
+  
    
-  </div>  
-</section>  
-</body>
+
+
+
+
+
+
+
+
+ </div>
+</div>
+</div>
+<!-- Blog section -->
+<!-- <div class="blog"  id="blog">
+    <div class="container">
+    <h1 class="text-center">Blog</h1>
+     <div class="row">
+      <div class="col-md-4 col-lg-4 col-sm-12">
+       <div class="card">
+        <div class="card-img">
+         <img src="images/posts/polit.jpg" class="img-fluid">
+        </div>
+        
+        <div class="card-body">
+        <h4 class="card-title">Post Title</h4>
+         <p class="card-text">
+          
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </div>
+        <div class="card-footer">
+         <a href="" class="card-link">Read more</a>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-12">
+       <div class="card">
+        <div class="card-img">
+         <img src="images/posts/images.jpg" class="img-fluid">
+        </div>
+        
+        <div class="card-body">
+           <h4 class="card-title">Post Title</h4>
+         <p class="card-text">
+          
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </div>
+        <div class="card-footer">
+         <a href="" class="card-link">Read more</a>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-4 col-lg-4 col-sm-12">
+       <div class="card">
+        <div class="card-img">
+         <img src="images/posts/imag2.jpg" class="img-fluid">
+        </div>
+        
+        <div class="card-body">
+        <h4 class="card-title">Post Title</h4>
+         <p class="card-text">
+          
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </div>
+        <div class="card-footer">
+         <a href="" class="card-link">Read more</a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+</div> -->
+<!-- Team section -->
+<div class="team"  id="team">
+    <div class="container">
+       <h1 class="text-center">Our Team</h1>
+     <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 item">
+        <section id="grid" class="grid clearfix">
+          <a href="#" data-value="about" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+            <figure>
+              <img src="images/team-1.jpg" />
+              <svg viewBox="0 0 180 220" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+              <figcaption>
+                <h2>JavaScript developer</h2>
+                <p></p>
+                <button class="button-view">ME</button>
+              </figcaption>
+            </figure>
+          </a>
+        </section>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 item">
+        <section id="grid" class="grid clearfix">
+          <a href="#" data-value="about" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+            <figure>
+              <img src="images/team-2.jpg" />
+              <svg viewBox="0 0 180 220" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+              <figcaption>
+                <h2>Designer</h2>
+                <p></p>
+                <button class="button-view">ME</button>
+              </figcaption>
+            </figure>
+          </a>
+        </section>
+      </div>
+    
+      <div class="col-lg-4 col-md-6 col-sm-12 item">
+      <section id="grid" class="grid clearfix">
+      <a href="#" data-value="about" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+        <figure>
+          <img src="images/team-3.jpg" />
+          <svg viewBox="0 0 180 220" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+          <figcaption>
+            <h2>Our best employee</h2>
+            <p></p>
+            <button class="button-view">ME</button>
+          </figcaption>
+        </figure>
+      </a>
+    </section>
+    </div>
+
+
+      <script>
+        (function() {
+    
+          function init() {
+            var speed = 330,
+              easing = mina.backout;
+  
+            [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+              var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                pathConfig = {
+                  from : path.attr( 'd' ),
+                  to : el.getAttribute( 'data-path-hover' )
+                };
+  
+              el.addEventListener( 'mouseenter', function() {
+                path.animate( { 'path' : pathConfig.to }, speed, easing );
+              } );
+  
+              el.addEventListener( 'mouseleave', function() {
+                path.animate( { 'path' : pathConfig.from }, speed, easing );
+              } );
+            } );
+          }
+  
+          init();
+  
+        })();
+      </script>
+     </div> 
+    </div>
+</div>
+<!-- Contact form -->
+<div class="contact-form"  id="contact">
+    <div class="container">
+     <form name = "mailMeForm" method="post" 
+     enctype="text/plain">
+      <div class="row">
+       <div class="col-lg-4 col-md-4 col-sm-12">
+         <h1>Get in Touch</h1> 
+       </div>
+       <div class="col-lg-8 col-md-8 col-sm-12 right">
+          <input type=hidden name="Message">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Your name here" name="name">
+          </div>
+          <!-- <div class="form-group">
+            <input type="email" class="form-control form-control-lg" placeholder="Your e-mail here" name="email">
+          </div> -->
+          <div class="form-group">
+            <textarea class="form-control form-control-lg" placeholder="Your message here" name="message" maxlength="256"></textarea>
+          </div>
+          <input type="submit" class="btn btn-secondary btn-block" value="Send Message" onClick='email("zametaoo@gmail.com")'>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </body>
 </html>
