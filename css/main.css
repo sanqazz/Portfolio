@@ -101,16 +101,16 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 
-/*Portfolio*/
-.portfolio{
-	margin: 4em 0;
+/*HTML/CSS*/
+.html_css, .reactjs, .vuejs{
+	margin: 3em 0;
     position: relative;	
 }
-.portfolio h1{
+.html_css h1,.reactjs h1, .vuejs h1{
 	color:rgb(10, 153, 219);
-	margin: 2em;	
+	margin: 1em;	
 }
-.portfolio img{
+.html_css img, .reactjs img, .vuejs img{
 	 height: 15rem;
 	 width: 100%;
 	 cursor: pointer;
