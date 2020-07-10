@@ -26,7 +26,7 @@ html,h1,h2,h3,h4,h5,h6,a{
  justify-content: flex-end;
 }
 .navbar-toggler{
-  background:#fff !important;
+  background:#fff ;
 }
 
 /*header style*/
@@ -99,6 +99,9 @@ html,h1,h2,h3,h4,h5,h6,a{
 	line-height:2;
 	color:#888;
 }
+
+
+
 
 
 /*HTML/CSS*/
@@ -193,51 +196,7 @@ html,h1,h2,h3,h4,h5,h6,a{
    }
 
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*blog style*/
+  /*blog style*/
 
 .blog{
 	margin: 4em 0;
@@ -323,3 +282,28 @@ position: relative;
 	color: #888;
 	font-size: 16px;
 }
+
+
+ .reactjs {
+	background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/portfolio/reactjs.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	
+}
+
+.vuejs {
+	background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/portfolio/vuejs.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	
+}
+
+.html_css {
+	background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/portfolio/html_css.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	
+} 
